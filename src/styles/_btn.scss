@@ -1,0 +1,68 @@
+.btn {
+  padding: 1rem 4rem;
+  background: $dark-gray;
+  color: $white;
+  border-radius: 5px;
+  transition: background ease-in 0.1s;
+  display: inline-block;
+
+  &:hover,
+  &:active {
+    color: $white;
+    background: $black;
+    text-decoration: none;
+  }
+
+  // LIGHT
+
+  &--light {
+    background: $light-gray;
+    color: $dark-gray;
+
+    &:hover,
+    &:active {
+      color: $black;
+      background: $white;
+      text-decoration: none;
+    }
+  }
+
+  // END LIGHT
+
+
+  // HOLLOW
+
+  &--hollow {
+    background: none;
+    border: 1px solid $dark-gray;
+    color: $dark-gray;
+
+    &:hover,
+    &:active {
+      color: $black;
+      border: 1px solid $black;
+      background: none;
+    }
+  }
+  // END HOLLOW
+}
+
+
+.btn[disabled] {
+  cursor: not-allowed;
+  background: $gray;
+  color: $light-gray;
+}
+
+.btn.btn--light[disabled] {
+  cursor: not-allowed;
+  background: $light-gray;
+  color: $gray;
+}
+
+.btn.btn--hollow[disabled] {
+  cursor: not-allowed;
+  background: none;
+  color: $gray;
+  border: 1px solid $gray;
+}
