@@ -1,4 +1,4 @@
-# Webpack Frontend Starterkit
+# Scetchy Starter
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/wbkd/webpack-starter.svg)](https://greenkeeper.io/)
 
