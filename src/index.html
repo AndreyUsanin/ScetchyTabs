@@ -6,34 +6,36 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-  <title>Sketchy Starter</title>
+  <title>Tabs</title>
 </head>
 
 <body>
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-12">
-        <h1>Scetchy Starter</h1>
+      <ul class="tabs__nav">
+        <li>
+          <a href="#tab_1" class="tabs__link is-active">
+            Tab One
+          </a>
+        </li>
+        <li>
+          <a href="#tab_2" class="tabs__link">
+            Tab Two
+          </a>
+        </li>
+      </ul>
+      <div class="tabs__content">
+        <div id="tab_1" class="tabs__item is-visible">
+          <h2>Lorem, ipsum.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam officiis vel accusamus provident. Incidunt magnam dolor in corrupti excepturi optio earum, architecto reiciendis sequi velit, cupiditate fugit. Nobis, fugit reprehenderit!</p>
+        </div>
+        <div id="tab_2" class="tabs__item">
+          <h2>Lorem, ipsum dolor.</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio facilis debitis id adipisci dolorem tenetur. Impedit porro ut reiciendis est.</p>
+        </div>
       </div>
     </div>
-  </div>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <h1>Generic Stuff</h1>
-      </div>
-      <div class="col-sm-12">
-        <a href="#" class="btn">Generic</a>
-        <a href="#" class="btn" disabled>Disabled</a>
-        <a href="#" class="btn btn--light">Light</a>
-        <a href="#" class="btn btn--light" disabled>Disabled</a>
-        <a href="#" class="btn btn--hollow">Hollow</a>
-        <a href="#" class="btn btn--hollow" disabled>Disbaled</a>
-      </div>
-    </div>
-
   </div>
 
 </body>

@@ -4,8 +4,50 @@
 @import "typography";
 @import "btn";
 
-
-
 body {
   background: $white;
+}
+
+.tabs {
+  &__nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    margin-top: 2rem;
+
+    li {
+      margin-right: 1rem;
+    }
+  }
+
+ 
+  &__link {
+    display: flex;
+    width: 100%;
+    background: $gray;
+    text-decoration: none;
+    color: $dark-gray;
+    border-bottom: 4px solid transparent;
+    padding: .5rem 3rem;
+
+    &.is-active {
+     background: $light-gray;
+    }
+
+  }
+  
+  &__content {
+    background: $light-gray;
+    padding: 2rem;
+  }
+
+  &__item {
+    display: none;
+  }
+}
+
+.tabs__item.is-visible {
+  display: block;
 }
