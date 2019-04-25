@@ -7,10 +7,36 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   <title>Tabs</title>
+  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.js"></script>
 </head>
 
 <body>
 
+  <div class="container">
+    <div class="row mt-5">
+      <div class="tabs">
+        <ul class="tabs__list" data-tabs>
+          <li><a class="tabs__link" data-tabby-default href="#tab-one">Tab One</a></li>
+          <li><a class="tabs__link" href="#tab-two">Tab Two</a></li>
+          <li><a class="tabs__link" href="#tab-three">Tab Three</a></li>
+        </ul>
+        <div class="tabs__content">
+          <div id="tab-one">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit maxime in, dicta nostrum voluptates quasi a ipsam praesentium eius animi?</p>
+          </div>
+          <div id="tab-two">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure minus quisquam sapiente accusantium facilis eius ad dolorem est explicabo neque excepturi natus modi cum, veniam impedit? Vel veniam quae aperiam.</p>
+          </div>
+          <div id="tab-three">
+            <h2>Lorem, ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ex eum, minima ullam quaerat fugiat!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 

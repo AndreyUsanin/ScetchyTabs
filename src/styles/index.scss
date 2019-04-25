@@ -4,3 +4,57 @@
 @import "typography";
 @import "btn";
 
+body {
+  background: $white;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__link {
+    color: $dark-gray;
+    padding: .5rem 3rem;
+    display: flex;
+    background: $gray;
+    margin-right: .5rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+    &:hover {
+      color: $dark-gray;
+      text-decoration: none;
+      outline: none;
+    }
+
+    &[aria-selected="true"] {
+      background: $light-gray;
+      outline: none;
+    }
+  }
+
+  &__content {
+    background: $light-gray;
+    padding: 2rem 3rem;
+  }
+}
+
+
+
+@include media-breakpoint-down(md) {
+    .tabs__list {
+      flex-direction: column;
+    }
+    .tabs__link {
+      border-radius: 0;
+      width: 100%;
+    }
+ }
