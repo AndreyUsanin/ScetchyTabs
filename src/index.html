@@ -6,35 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/accordion-js@2.7.1/dist/accordion.min.css">
+
   <title>tabs-v</title>
-  <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.js"></script>
-</head>
+
 
 <body>
 
   <div class="container">
     <div class="row mt-5">
-      <div class="tabs-v">
-        <ul class="tabs-v__list" data-tabs-v>
-          <li><a class="tabs-v__link" data-tabby-default href="#tab-one">Tab One</a></li>
-          <li><a class="tabs-v__link" href="#tab-two">Tab Two</a></li>
-          <li><a class="tabs-v__link" href="#tab-three">Tab Three</a></li>
-        </ul>
-        <div class="tabs-v__content">
-          <div id="tab-one">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit maxime in, dicta nostrum voluptates quasi a ipsam praesentium eius animi?</p>
+
+      <div class="accordion">
+        <div>
+          <div class="accordion__header">
+            Accordion Title One
           </div>
-          <div id="tab-two">
+        </div>
+        <div class="badger-accordion__panel accordion__panel">
+          <div class="accordion__inner">
+            <h2>Lorem, ipsum.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quasi voluptatibus iste ab sunt at
+              repudiandae, omnis dolor harum maxime.</p>
+          </div>
+        </div>
+        <div>
+          <div class="accordion__header">
+            Accordion Title Two
+          </div>
+        </div>
+        <div class="badger-accordion__panel accordion__panel">
+          <div class="accordion__inner">
             <h2>Lorem ipsum dolor sit.</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure minus quisquam sapiente accusantium facilis eius ad dolorem est explicabo neque excepturi natus modi cum, veniam impedit? Vel veniam quae aperiam.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequatur, obcaecati voluptas sed autem
+              voluptates provident officiis sequi pariatur cumque labore adipisci hic omnis nobis.</p>
           </div>
-          <div id="tab-three">
-            <h2>Lorem, ipsum dolor.</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ex eum, minima ullam quaerat fugiat!</p>
+        </div>
+        <div>
+          <div class="accordion__header">
+            Accordion Title Three
+          </div>
+        </div>
+        <div class="badger-accordion__panel accordion__panel">
+          <div class="accordion__inner">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus consequatur, obcaecati voluptas sed autem
+              voluptates provident officiis sequi pariatur cumque labore adipisci hic omnis nobis.</p>
           </div>
         </div>
       </div>
+
+
     </div>
   </div>
 
